@@ -31,7 +31,6 @@ SKU-1035,polo,600.0,SEK,2024-09-15,False,False,False
 SKU-1036,leggings,350.0,SEK,2024-10-01,False,False,False
 SKU-1037,tracksuit,1200.0,SEK,2024-10-05,False,False,False
 SKU-1038,swimsuit,700.0,SEK,2024-10-10,False,False,False
-SKU-1039,coat,999999.0,SEK,2024-10-15,False,False,True
 SKU-1040,parka,4500.0,SEK,2024-11-01,False,False,False
 SKU-1041,beanie,180.0,SEK,2024-11-05,False,False,False
 SKU-1042,earmuffs,130.0,SEK,2024-11-10,False,False,False
@@ -44,4 +43,3 @@ SKU-1049,robe,900.0,SEK,2024-12-25,False,False,False
 SKU-1050,pyjamas,600.0,SEK,2025-01-01,False,False,False
 SKU-1051,suspenders,250.0,SEK,2025-01-05,False,False,False
 SKU-1053,cap,85.0,SEK,2025-01-15,False,False,False
-SKU-1054,,450.0,SEK,2025-02-01,False,False,False

@@ -32,7 +32,8 @@ df["missing_currency"] = df["currency"].isna()
 
 df["zero_price"] = df["price"] == 0
 
-EXTREME_PRICE_LIMIT = 10000
+EXTREME_PRICE_LIMIT = 10000   # flagged as possible luxury products
+MAX_VALID_PRICE = 100000      # higher prices are treated as data errors
 df["extreme_price"] = df["price"] > EXTREME_PRICE_LIMIT
 
 #Här försöker jag rensa så att de "konstiga" värden inte kommer i kodningen t.ex. priser som visar negativt, saknade priser och priser som saknar valuta.
@@ -40,9 +41,12 @@ df["extreme_price"] = df["price"] > EXTREME_PRICE_LIMIT
 #Sedan print för att visa alla giltiga produkter från listan, vilket jag får fram 46 giltiga produkter.
 
 valid_products = df[
+    (df["id"].notna()) &
+    (df["name"].notna()) &
     (df["price"].notna()) &
     (df["price"] >= 0) &
-    (df["currency"].notna())
+    (df["currency"].notna()) &
+    (df["price"] <= MAX_VALID_PRICE)
 ]
 #Här skickar jag alla giltiga produkter i rensade produkter listan för att göra det lite snyggare och lagrar datan i en anna fil.
 valid_products.to_csv("output/valid_products.csv", index=False)
