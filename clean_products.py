@@ -7,7 +7,7 @@
 
 import pandas as pd
 
-df = pd.read_csv("json_lab1.csv", sep=";")
+df = pd.read_csv("data/products_raw.csv", sep=";")
 
 #Här läser jag fram datan från json filen, jag la till print som en liten "titel" för att göra det lite snyggt.
 #Med df.head så får jag fram uppdelat i kollumner för id, name, price, currency.
@@ -44,7 +44,7 @@ valid_products = df[
     (df["currency"].notna())
 ]
 #Här skickar jag alla giltiga produkter i rensade produkter listan för att göra det lite snyggare och lagrar datan i en anna fil.
-valid_products.to_csv("rensade_produkter.csv", index=False)
+valid_products.to_csv("output/valid_products.csv", index=False)
 
 print("\nAntal giltiga produkter:", len(valid_products))
 
@@ -66,7 +66,7 @@ analytics_summary = pd.DataFrame({
     "antal_produkter_med_saknat_pris": [missing_price_count]
 })
 
-analytics_summary.to_csv("analytics_summary.csv", index=False)
+analytics_summary.to_csv("output/analytics_summary.csv", index=False)
 
 print("\nanalytics_summary.csv har skapats")
 
