@@ -16,10 +16,11 @@ df = pd.read_csv("data/products_raw.csv", sep=";")
 print("Data inläst:")
 print(df.head(10))
 print("\nInfo om datan:")
-print(df.info())
+df.info()
 
 #Här omvandlar jag allt inom price från filen till siffror, så det inte blir några error
-
+for column in ["id", "name", "currency"]:
+    df[column] = df[column].str.strip()
 df["price"] = pd.to_numeric(df["price"], errors="coerce")
 
 #Här försöker jag flagga problem från listan för de som fattas en currency. Jag använder .isna som ett sätt att upptäcka odentifierande/missing värden,

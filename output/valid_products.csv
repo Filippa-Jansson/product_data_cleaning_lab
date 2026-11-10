@@ -1,5 +1,5 @@
 id,name,price,currency,created_at,missing_currency,zero_price,extreme_price
-SKU-1001, shoes ,799.0,SEK,2024-01-10,False,False,False
+SKU-1001,shoes,799.0,SEK,2024-01-10,False,False,False
 SKU-1002,pants,520.0,SEK,2024/02/15,False,False,False
 SKU-1003,shirts,450.0,SEK,,False,False,False
 SKU-1009,socks,99.0,SEK,2024-02-01,False,False,False
@@ -15,11 +15,11 @@ SKU-1019,sandals,400.0,SEK,2024-05-15,False,False,False
 SKU-1020,watch,15000.0,SEK,2024-06-01,False,False,True
 SKU-1021,ring,25000.0,SEK,2024-06-05,False,False,True
 SKU-1022,bracelet,500.0,SEK,2024-06-10,False,False,False
-SKU-1023, necklace ,650.0,SEK,2024-06-15,False,False,False
+SKU-1023,necklace,650.0,SEK,2024-06-15,False,False,False
 SKU-1024,sunglasses,900.0,SEK,2024-07-01,False,False,False
 SKU-1025,backpack,1100.0,SEK,2024-07-05,False,False,False
 SKU-1026,umbrella,300.0,SEK,2024-07-10,False,False,False
-SKU-1027, winter jacket ,3500.0,SEK,2024-07-15,False,False,False
+SKU-1027,winter jacket,3500.0,SEK,2024-07-15,False,False,False
 SKU-1028,shorts,450.0,SEK,2024-08-01,False,False,False
 SKU-1029,skirt,500.0,SEK,2024-08-05,False,False,False
 SKU-1030,gloves,200.0,SEK,2024-08-10,False,False,False
@@ -37,7 +37,7 @@ SKU-1041,beanie,180.0,SEK,2024-11-05,False,False,False
 SKU-1042,earmuffs,130.0,SEK,2024-11-10,False,False,False
 SKU-1044,vest,800.0,SEK,2024-12-01,False,False,False
 SKU-1045,loafers,1100.0,SEK,2024-12-05,False,False,False
-SKU-1046, sneakers ,1000.0,SEK,2024-12-10,False,False,False
+SKU-1046,sneakers,1000.0,SEK,2024-12-10,False,False,False
 SKU-1047,heels,1500.0,SEK,2024-12-15,False,False,False
 SKU-1048,flipflops,100.0,SEK,2024-12-20,False,False,False
 SKU-1049,robe,900.0,SEK,2024-12-25,False,False,False
