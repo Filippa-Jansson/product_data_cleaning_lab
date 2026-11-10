@@ -1,2 +1,2 @@
-snittpris,medianpris,antal_produkter,antal_produkter_med_saknat_pris
+average_price,median_price,product_count,missing_price_count
 1784.2727272727273,600.0,44,5
